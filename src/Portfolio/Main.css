@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,300&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Titillium Web', sans-serif;
+}
+main {
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  list-style-type: none;
+}
+@media only screen and (max-width: 500px) {
+  body {
+    color: black;
+    background-color: #f7ecec;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: white;
+    padding: 10px 30px;
+  }
+  .logo, .toggler {
+    font-size: 2rem;
+  }
+  .row {
+    display: block;
+  }
+  .col {
+    display: block;
+    border: 1px solid black;
+  }
+  .side {
+    width: 85%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    background-color: black;
+    transition: .5s ease-in-out;
+  }
+  .toggler {
+    transition: .5s ease-in-out;
+  }
+  .toggler:hover {
+    cursor: pointer;
+  }
+  .toggler.active {
+    transition: .5s ease-in-out;
+    display: block;
+    color: #fff;
+    z-index: 1;
+    transform: rotateX(180deg);
+  }
+  .side.active {
+    right: 0;
+  }
+  .side ul {
+    margin-top: 70px;
+  }
+  .side ul li {
+    padding-top: 20px;
+    color: #fff;
+    text-align: right;
+    padding-right: 50px;
+    font-size: 1.5rem;
+  }
+  .sec-1 {
+    margin: 20px;
+  }
+  .sec-1 h4 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .sec-1 h1 {
+    font-size: 2.2rem;
+    font-weight: bolder;
+  }
+  .sec-1 h6 {
+    font-weight: 600;
+  }
+  .typical {
+    font-weight: 700;
+  }
+  .sec-1 p {
+    font-weight: 600;
+  }
+  .profile-pic {
+    background-color: rgb(20, 20, 165);
+    border-radius: 50%;
+  }
+  .profile-pic img {
+    width: 80vw;
+    height: 50vh;
+    position: relative;
+    /* text-align: center; */
+    
+  }
+}
+@media only screen and (min-width: 501px) {
+  .row {
+    display: flex;
+  }
+  .toggler {
+    display: none;
+  }
+  .col-1 {
+    background-color: yellow;
+  }
+  .side {
+    width: 25%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+  }
+}
