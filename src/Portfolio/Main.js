@@ -2,7 +2,7 @@ import React from "react";
 import "../Portfolio/Main.css";
 import { useEffect } from "react";
 import Typical from "react-typical";
-import myImage from "../assets/teo.png"
+import myImage from "../assets/teo.jpg"
 
 export default function Main() {
   useEffect(() => {
@@ -42,14 +42,30 @@ export default function Main() {
 
   return (
     <main>
-      <nav>
+      
+      
+    </main>
+  );
+}
+
+
+          {/* I craft digital solutions that leave a lasting impact on visitors. My proficiency in
+          HTML, CSS, and JavaScript, along with expertise in popular frameworks
+          like React and Bootstrap, empowers me to turn ideas into reality
+          efficiently.
+          "Hi, I'm [Your Name], a passionate front-end developer with a keen eye for creating stunning and user-friendly websites. With a focus on responsive design and seamless user experiences, I craft digital solutions that leave a lasting impact on visitors. My proficiency in HTML, CSS, and JavaScript, along with expertise in popular frameworks like React and Bootstrap, empowers me to turn ideas into reality efficiently.
+
+I love transforming concepts into visually captivating and interactive websites that not only represent your brand but also drive results. Whether you need a custom website, a dynamic web application, or an engaging UI/UX, I'm here to bring your vision to life.
+
+Don't just take my word for it - check out my portfolio to see some of the projects I've had the pleasure to work on. If you're looking to collaborate on a project or have any questions, feel free to reach out. Let's build something amazing together!"
+
+Remember, your "what I do" section should be a reflection of your personality, skills, and passion for front-end development. Keep it genuine, and it will resonate with your audience, attracting potential clients, employers, or collaborators to explore more about your work. */}
+
+{/* <nav>
         <section className="sec-1">
-        <header className="hm">
-        <div className="logo">TEO</div>
-        <div className="toggler">T</div>
-        </header>
+        
         <section className=" row sec-2">
-        <div className="profile-pic">
+        <div className="profile-pic pic-d">
           <img src={myImage} alt="My profile"/>
         </div>
         </section>
@@ -109,21 +125,4 @@ export default function Main() {
             </li>
           </ul>
         </div>
-      </nav>
-      
-    </main>
-  );
-}
-
-
-          {/* I craft digital solutions that leave a lasting impact on visitors. My proficiency in
-          HTML, CSS, and JavaScript, along with expertise in popular frameworks
-          like React and Bootstrap, empowers me to turn ideas into reality
-          efficiently.
-          "Hi, I'm [Your Name], a passionate front-end developer with a keen eye for creating stunning and user-friendly websites. With a focus on responsive design and seamless user experiences, I craft digital solutions that leave a lasting impact on visitors. My proficiency in HTML, CSS, and JavaScript, along with expertise in popular frameworks like React and Bootstrap, empowers me to turn ideas into reality efficiently.
-
-I love transforming concepts into visually captivating and interactive websites that not only represent your brand but also drive results. Whether you need a custom website, a dynamic web application, or an engaging UI/UX, I'm here to bring your vision to life.
-
-Don't just take my word for it - check out my portfolio to see some of the projects I've had the pleasure to work on. If you're looking to collaborate on a project or have any questions, feel free to reach out. Let's build something amazing together!"
-
-Remember, your "what I do" section should be a reflection of your personality, skills, and passion for front-end development. Keep it genuine, and it will resonate with your audience, attracting potential clients, employers, or collaborators to explore more about your work. */}
+      </nav> */}

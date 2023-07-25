@@ -1,0 +1,21 @@
+.hm {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+.logo, .toggler {
+    font-size: 2.5rem;
+}
+.toggler {
+    transition: .5s ease-in-out;
+  }
+  .toggler:hover {
+    cursor: pointer;
+  }
+  .toggler.active {
+    transition: .5s ease-in-out;
+    display: block;
+    color: #fff;
+    z-index: 1;
+    transform: rotateX(180deg);
+  }
