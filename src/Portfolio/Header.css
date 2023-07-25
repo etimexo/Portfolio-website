@@ -3,19 +3,72 @@
     justify-content: space-between;
     padding: 10px 50px;
 }
-.logo, .toggler {
+
+.logo,
+.toggler {
     font-size: 2.5rem;
 }
+
 .toggler {
     transition: .5s ease-in-out;
-  }
-  .toggler:hover {
+}
+
+.toggler:hover {
     cursor: pointer;
-  }
-  .toggler.active {
+}
+
+.side {
+    width: 85%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -1000px;
+    background-color: black;
+    transition: .5s ease-in-out;
+}
+
+.toggler {
+    transition: .5s ease-in-out;
+}
+
+.toggler:hover {
+    cursor: pointer;
+}
+
+.toggler.active {
     transition: .5s ease-in-out;
     display: block;
     color: #fff;
     z-index: 1;
     transform: rotateX(180deg);
-  }
+}
+
+.side.active {
+    right: 0;
+}
+
+.side ul {
+    margin-top: 70px;
+}
+
+.side ul li {
+    padding-top: 20px;
+    color: #fff;
+    text-align: right;
+    padding-right: 50px;
+    font-size: 1.5rem;
+}
+
+.toggler.active {
+    transition: .5s ease-in-out;
+    display: block;
+    color: #fff;
+    z-index: 1;
+    transform: rotateX(180deg);
+}
+
+@media only screen and (min-width: 900px) {
+    .side {
+        display: none;
+    }
+}

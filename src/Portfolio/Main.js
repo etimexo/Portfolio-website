@@ -2,7 +2,8 @@ import React from "react";
 import "../Portfolio/Main.css";
 import { useEffect } from "react";
 import Typical from "react-typical";
-import myImage from "../assets/teo.jpg"
+import myImage from "../assets/teo.jpg";
+import Bootstrap from "bootstrap";
 
 export default function Main() {
   useEffect(() => {
@@ -42,14 +43,37 @@ export default function Main() {
 
   return (
     <main>
-      
-      
+      <div className="row">
+        <div className="col col-1">
+          <h4>Hello, I am</h4>
+          <h1>Elijah Obisesan</h1>
+          <h6>(Also known as GentleDove & TEO)</h6>
+          <div className="typical">
+            <span>
+              <Typical
+                loop={Infinity}
+                steps={[
+                  "A front-end developer",
+                  1500,
+                  "A lover of tech",
+                  1500,
+                  "An aspiring machine learning engineer",
+                  1000,
+                ]}
+              />
+            </span>
+          </div>
+        </div>
+        <div className="col col-2">
+          <img src={myImage} />
+        </div>
+      </div>
     </main>
   );
 }
 
 
-          {/* I craft digital solutions that leave a lasting impact on visitors. My proficiency in
+{/* I craft digital solutions that leave a lasting impact on visitors. My proficiency in
           HTML, CSS, and JavaScript, along with expertise in popular frameworks
           like React and Bootstrap, empowers me to turn ideas into reality
           efficiently.
@@ -69,24 +93,7 @@ Remember, your "what I do" section should be a reflection of your personality, s
           <img src={myImage} alt="My profile"/>
         </div>
         </section>
-        <h4>Hello, I am</h4>
-        <h1>Elijah Obisesan</h1>
-        <h6>(Also known as GentleDove & TEO)</h6>
-        <div className="typical">
-          <span>
-            <Typical
-              loop={Infinity}
-              steps={[
-                "A front-end developer",
-                1500,
-                "A lover of tech",
-                1500,
-                "An aspiring machine learning engineer",
-                1000,
-              ]}
-            />
-          </span>
-        </div>
+        
         <p>
           Being a passionate front-end developer with a keen eye
           for creating stunning and user-friendly websites. With a focus on
@@ -96,33 +103,5 @@ Remember, your "what I do" section should be a reflection of your personality, s
           <img src={myImage} alt="My profile"/>
         </div>
       </section>
-        <div className="side">
-          <ul>
-            <li className="nav-item">
-              <a href="https://www.google.com" className="nav-link">
-                HOME
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="https://www.google.com" className="nav-link">
-                ABOUT ME
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="https://www.google.com" className="nav-link">
-                PORTFOLIO
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="https://www.google.com" className="nav-link">
-                SERVICES
-              </a>
-            </li>
-            <li className="nav-item">
-              <a href="https://www.google.com" className="nav-link">
-                CONTACT ME
-              </a>
-            </li>
-          </ul>
-        </div>
+        
       </nav> */}
