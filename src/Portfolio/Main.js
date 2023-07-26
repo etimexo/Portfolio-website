@@ -47,7 +47,6 @@ export default function Main() {
         <div className="col col-1">
           <h4>Hello, I am</h4>
           <h1>Elijah Obisesan</h1>
-          <h6>(Also known as GentleDove & TEO)</h6>
           <div className="typical">
             <span>
               <Typical
@@ -63,6 +62,12 @@ export default function Main() {
               />
             </span>
           </div>
+          <p>
+          I craft digital solutions that leave a lasting impact on visitors. My proficiency in
+          HTML, CSS, and JavaScript, alongside experience with some popular frameworks
+          like React and Bootstrap, empowers me to turn ideas into reality
+          efficiently.
+          </p>
         </div>
         <div className="col col-2">
           <img src={myImage} />
@@ -73,10 +78,7 @@ export default function Main() {
 }
 
 
-{/* I craft digital solutions that leave a lasting impact on visitors. My proficiency in
-          HTML, CSS, and JavaScript, along with expertise in popular frameworks
-          like React and Bootstrap, empowers me to turn ideas into reality
-          efficiently.
+{/* 
           "Hi, I'm [Your Name], a passionate front-end developer with a keen eye for creating stunning and user-friendly websites. With a focus on responsive design and seamless user experiences, I craft digital solutions that leave a lasting impact on visitors. My proficiency in HTML, CSS, and JavaScript, along with expertise in popular frameworks like React and Bootstrap, empowers me to turn ideas into reality efficiently.
 
 I love transforming concepts into visually captivating and interactive websites that not only represent your brand but also drive results. Whether you need a custom website, a dynamic web application, or an engaging UI/UX, I'm here to bring your vision to life.

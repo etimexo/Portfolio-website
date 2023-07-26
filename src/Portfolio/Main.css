@@ -22,6 +22,10 @@ col {
 }
 
 @media only screen and (max-width: 500px) {
+  main {
+    width: 100%;
+    padding: 10px 7%;
+  }
 
   .row {
     display: block;
@@ -40,6 +44,18 @@ col {
   .col {
     display: block;
   }
+  .col-1 h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .col-1 h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .col-1 h4, h6, .typical {
+    font-size: 4rem;
+    text-decoration: italic;
+  }
 }
 
 @media only screen and (min-width: 501px) {
@@ -48,13 +64,26 @@ col {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 8%;
+    padding: 1% 7%;
     margin-top: -20px;
   }
 
   .col-1 {
     width: 60%;
   }
+  .col-1 h4 {
+    font-size: 5rem;
+    font-weight: 600;
+  }
+  .col-1 h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  .col-1 h4, h6, .typical {
+    font-size: 4rem;
+    text-decoration: italic;
+  } 
+
 
   .col-2 {
     width: 40%;
