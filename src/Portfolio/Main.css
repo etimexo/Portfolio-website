@@ -20,7 +20,26 @@ col {
   padding: 0;
   margin: 0;
 }
-
+.col-2 {
+  animation: Picanimate infinite 10s ease-in;
+}
+@keyframes Picanimate {
+  from {
+    transform: rotateY(360deg);
+  }
+  /* to {
+    transform: rotateX(0);
+  } */
+  to {
+    transform: rotateY(0);
+  }
+  /* from {
+    transform: translateX(-700px);
+}
+to {
+    transform: translateX(0);
+} */
+}
 @media only screen and (max-width: 500px) {
   main {
     width: 100%;

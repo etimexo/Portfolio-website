@@ -2,7 +2,7 @@ import React from "react";
 import "../Portfolio/Main.css";
 import { useEffect } from "react";
 import Typical from "react-typical";
-import myImage from "../assets/teo.jpg";
+import myImage from "../assets/teo.png";
 import Bootstrap from "bootstrap";
 
 export default function Main() {
